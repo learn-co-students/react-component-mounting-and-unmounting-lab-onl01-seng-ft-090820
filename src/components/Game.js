@@ -20,7 +20,6 @@ class Game extends React.Component {
     this.setCurrentTime()
   }
 
-
   setCurrentTime = () => {
     this.setState({ time: new Date(Date.now())});
   }
