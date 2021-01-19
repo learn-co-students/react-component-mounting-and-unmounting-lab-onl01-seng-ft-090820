@@ -28,13 +28,13 @@ describe('Game', () => {
 
 describe('Pancake', () => {
 
-  // it('sets up the interval updating the cooking time every second', () => {
-  //   const pWrapper = mount(<Pancake />);
-  //   clock.tick(1010);
-  //   pWrapper.find('button').simulate('click')
-  //   pWrapper.update()
-  //   expect(pWrapper.state('timeCooked')).to.equal(1);
-  // });
+  it('sets up the interval updating the cooking time every second', () => {
+    const pWrapper = mount(<Pancake />);
+    clock.tick(1010);
+    pWrapper.find('button').simulate('click')
+    pWrapper.update()
+    expect(pWrapper.state('timeCooked')).to.equal(1);
+  });
 
   it('calls componentWillUnmount', () => {
 
